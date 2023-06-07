@@ -1223,6 +1223,7 @@ tr {
   color: #fff;
   transition: 0.4s;
   border-radius: 4px; /* Componente añadido - Formato - Ajusta para redondeo esquinas  */
+  font-weight: bold;
 }
 
 /*
@@ -1235,6 +1236,7 @@ tr {
   color: #fff;
   transition: 0.4s;
   border-radius: 4px; /* Componente añadido - Formato - Ajusta para redondeo esquinas  */
+  font-weight: bold;
 }
 
 /**
