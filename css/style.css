@@ -1000,6 +1000,35 @@ tr {
   margin: 0 0 0 68px;
 }
 
+/*--------------------------------------------------------------
+# Aplicar responsividad al mapa
+--------------------------------------------------------------*/
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Este valor puede ajustarse para obtener el ratio de aspecto que desees */
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/*--------------------------------------------------------------
+# Ajuste de contenedores con google maps
+--------------------------------------------------------------*/
+
+.info-box-rigth-format {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .contact .info-box .social-links {
   margin: 5px 0 0 68px;
   display: flex;
@@ -1153,6 +1182,10 @@ tr {
 
 .contact .php-email-form button[type="submit"]:hover {
   background: #109888;
+}
+
+button {
+  max-width: 200px; /* Ajusta según sea necesario */
 }
 
 @keyframes animate-loading {
