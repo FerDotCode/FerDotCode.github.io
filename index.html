@@ -29,6 +29,10 @@
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
 
+  <!-- Filter table  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
 </head>
 
 <body>
@@ -84,19 +88,19 @@
           </p>
           <div class="row">
           </div>
-          <p>
+          <p class="about-me-format">
             I am a highly curious individual committed to continuous learning. Problem-solving deeply motivates me, and
             I see every challenge as a new opportunity to learn and work more efficiently on the next project.
           </p>
-          <p>
+          <p class="about-me-format">
             I highly value teamwork and effective communication, as it enables smooth collaboration on multidisciplinary
             projects. However, I am also comfortable working autonomously.
           </p>
-          <p>
+          <p class="about-me-format">
             With experience in web application development and digital marketing, I believe I can bring a global
             perspective to the needs of clients or users.
           </p>
-          <p>
+          <p class="about-me-format">
             I am always ready to face challenges and strive to combine front-end and back-end technologies to create
             innovative and high-impact web solutions that exceed initial expectations and provide convenience to end
             users.
@@ -453,8 +457,8 @@
               <h4>Rent A Bike (Swing)</h4>
               <p>App</p>
               <div class="portfolio-links">
-                <a href="img/portfolio/appRentAbike.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Rent A Bike"><i class="bx bx-plus"></i></a>
+                <a href="img/portfolio/appRentAbike.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Rent A Bike"><i class="bx bx-plus"></i></a>
                 <a href="https://github.com/FerDotCode/rent_a_bike_app.git" data-gallery="portfolioDetailsGallery"
                   data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i
                     class="bx bx-link"></i></a>
@@ -497,12 +501,10 @@
               <h4>Shop and Logistic Manager (Swing)</h4>
               <p>App</p>
               <div class="portfolio-links">
-                <a href="img/portfolio/appBasicShopH.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Shop and Logistic Manager 1" alt="Image Basic Shop"><i
-                    class="bx bx-plus"></i></a>
-                <a href="img/portfolio/appBasicShopF.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Shop and Logistic Manager 2" alt="Image Basic Shop"><i
-                    class="bx bx-plus"></i></a>
+                <a href="img/portfolio/appBasicShopH.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Shop and Logistic Manager 1" alt="Image Basic Shop"><i class="bx bx-plus"></i></a>
+                <a href="img/portfolio/appBasicShopF.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Shop and Logistic Manager 2" alt="Image Basic Shop"><i class="bx bx-plus"></i></a>
                 <a href="https://github.com/FerDotCode/logistic_manager_shop_app.git"
                   data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
                   class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -529,7 +531,7 @@
 
       <div class="row mt-2">
         <div class="section-title">
-          <h5>Meeting Calendar</h5>
+          <h5>Services Meeting Calendar</h5>
         </div>
       </div>
 
@@ -541,8 +543,7 @@
             <table id="table" class="table thead-light">
               <thead>
                 <tr>
-                  <th scope="col" colspan="2">SERVICES</th>
-                  <th scope="col">HOURS</th>
+                  <th scope="col" colspan="3">HOURS</th>
                   <th scope="col">MONDAY</th>
                   <th scope="col">TUESDAY</th>
                   <th scope="col">WEDNESDAY</th>
@@ -558,58 +559,52 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row" colspan="2">Front-end Development</th>
-                  <td>8:00 AM</td>
-                  <td>FREE</td>
-                  <td>FREE</td>
-                  <td>FREE</td>
+                  <th scope="row" colspan="3">8:00 AM</th>
+                  <td>Front-end</td>
+                  <td>Optimization</td>
+                  <td>Maintenance</td>
                   <td>--</td>
-                  <td>FREE</td>
+                  <td>Front-end</td>
                 </tr>
                 <tr>
-                  <th scope="row" colspan="2">Back-end Development</th>
-                  <td>9:00 AM</td>
+                  <th scope="row" colspan="3">9:00 AM</th>
                   <td>--</td>
-                  <td>FREE</td>
+                  <td>Back-end</td>
                   <td>--</td>
-                  <td>FREE</td>
-                  <td>--</td>
-                </tr>
-                <tr>
-                  <th scope="row" colspan="2">Web Application Development</th>
-                  <td>10:00 AM</td>
-                  <td>FREE</td>
-                  <td>FREE</td>
-                  <td>--</td>
-                  <td>FREE</td>
+                  <td>E-commerce</td>
                   <td>--</td>
                 </tr>
                 <tr>
-                  <th scope="row" colspan="2">E-commerce and Digital Marketing</th>
-                  <td>11:00 AM</td>
+                  <th scope="row" colspan="3">10:00 AM</th>
+                  <td>Back-end</td>
+                  <td>Front-end</td>
                   <td>--</td>
-                  <td>FREE</td>
-                  <td>FREE</td>
-                  <td>FREE</td>
-                  <td>FREE</td>
-                </tr>
-                <tr>
-                  <th scope="row" colspan="2">Web Optimization</th>
-                  <td>12:00 PM</td>
-                  <td>--</td>
-                  <td>--</td>
-                  <td>FREE</td>
-                  <td>FREE</td>
+                  <td>Web Application</td>
                   <td>--</td>
                 </tr>
                 <tr>
-                  <th scope="row" colspan="2">Maintenance and Updates</th>
-                  <td>13:00 PM</td>
-                  <td>FREE</td>
-                  <td>FREE</td>
+                  <th scope="row" colspan="3">11:00 AM</th>
                   <td>--</td>
-                  <td>FREE</td>
-                  <td>FREE</td>
+                  <td>Web Application</td>
+                  <td>Back-end</td>
+                  <td>Front-end</td>
+                  <td>Maintenance</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">12:00 PM</th>
+                  <td>--</td>
+                  <td>--</td>
+                  <td>E-commerce</td>
+                  <td>Web Application</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">13:00 PM</th>
+                  <td>Back-end</td>
+                  <td>Optimization</td>
+                  <td>--</td>
+                  <td>Web Application</td>
+                  <td>Front-end</td>
                 </tr>
               </tbody>
             </table>
@@ -618,45 +613,54 @@
         </div>
       </div>
 
-
       <div class="row mt-4">
 
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-map"></i>
             <h3>My Address</h3>
-            <p>Av. de Peris i Valero, 143, Bajo Derecha, 46005 Valencia</p>
+            <p>C/ de Buenos Aires, 15, BAJO, 46006 València, Valencia</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12321.35906948938!2d-0.3764309!3d39.4616523!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f34ee8c0fdf%3A0x213ff386fcc312b6!2sCOWORK%20RUZAFA!5e0!3m2!1ses!2ses!4v1686136020671!5m2!1ses!2ses"
+              width="580" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://twitter.com/Viejuno_Code" class="twitter" target="_blank"><i
-                  class="bi bi-twitter"></i></a>
-              <a href="https://www.linkedin.com/in/fernando-r-70aab9162/" class="linkedin" target="_blank"><i
-                  class="bi bi-linkedin"></i></a>
+        <div class="col-md-6">
+          <div class="row"> <!-- row adicional -->
+            <div class="col-md-12"> <!-- Cambié a 12 para que ocupe todo el espacio -->
+              <div class="info-box">
+                <i class="bx bx-share-alt"></i>
+                <h3>Social Profiles</h3>
+                <div class="social-links">
+                  <a href="https://twitter.com/Viejuno_Code" class="twitter" target="_blank"><i
+                      class="bi bi-twitter"></i></a>
+                  <a href="https://www.linkedin.com/in/fernando-r-70aab9162/" class="linkedin" target="_blank"><i
+                      class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 mt-4">
+              <div class="info-box">
+                <i class="bx bx-envelope"></i>
+                <h3>Email Me</h3>
+                <p>f.romero.uni@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="col-md-12 mt-4">
+              <div class="info-box">
+                <i class="bx bx-phone-call"></i>
+                <h3>Call Me</h3>
+                <p>+34 000 000 000</p>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p>f.romero.uni@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
-            <p></p>
-          </div>
-        </div>
       </div>
+
 
       <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
         <div class="row">
