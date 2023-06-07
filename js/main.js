@@ -254,24 +254,17 @@
   });
 
   /**
-   * Calendar
+   * Filtro de tabla contacto meeting day
    */
-  var busqueda = document.getElementById("buscar");
-  var table = document.getElementById("tabla")?.tBodies[0];
+  $(document).ready(function () {
+    $("#buscar").on("keyup", function () {
+      var value = $(this).val().toLowerCase();
+      $("#table tbody tr").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+      });
+    });
+  });
 
-  if (busqueda && table) {
-    const buscaTabla = function () {
-      const texto = busqueda.value.toLowerCase();
-      let r = 0;
-      while ((row = table.rows[r++])) {
-        if (row.innerText.toLowerCase().indexOf(texto) !== -1)
-          row.style.display = null;
-        else row.style.display = "none";
-      }
-    };
-
-    busqueda.addEventListener("keyup", buscaTabla);
-  }
   /**
    * Initiate Pure Counter
    */

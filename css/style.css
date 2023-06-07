@@ -12,7 +12,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/fondoCoding2.jpg") top right no-repeat;
+  background: #040404 url("../img/fondoCoding2.jpg") top right no-repeat; /* Componente añadido - Fondo de portada  */
   background-size: cover;
   left: 0;
   right: 0;
@@ -455,7 +455,7 @@ section .container {
 
 .about-me .img-fluid {
   margin-bottom: 0;
-  border-radius: 10px; /* Ajusta este valor para cambiar cuánto quieres que se redondeen las esquinas */
+  border-radius: 10px; /* Componente añadido - Formato - Ajusta para redondeo esquinas  */
 }
 
 .call-to-action {
@@ -476,7 +476,7 @@ section .container {
   position: relative;
   text-align: center;
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 10px; /* Ajusta este valor para cambiar cuánto quieres que se redondeen las esquinas */
+  border-radius: 10px; /* Componente añadido - Formato - Ajusta para redondeo esquinas  */
 }
 
 .counts .count-box i {
@@ -509,6 +509,11 @@ section .container {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+
+/**
+* Componente modificado
+* Formato para dar coherencia entre espacios y contenedores
+*/
 .skills .icon-box {
   display: flex;
   flex-direction: column;
@@ -517,7 +522,7 @@ section .container {
   padding: 20px;
   background: rgba(255, 255, 255, 0.08);
   transition: ease-in-out 0.3s;
-  border-radius: 10px; /* Ajusta este valor para cambiar cuánto quieres que se redondeen las esquinas */
+  border-radius: 10px; /* Componente añadido - Formato - Ajusta para redondeo esquinas  */
 }
 
 .skills .icon-box h3 {
@@ -533,6 +538,10 @@ section .container {
   background: rgba(255, 255, 255, 0.12);
 }
 
+/**
+* Componente modificado
+* Formato para dar coherencia entre espacios y contenedores
+*/
 .container-skills-line {
   width: 100%;
   display: flex;
@@ -540,6 +549,10 @@ section .container {
   margin: auto;
 }
 
+/**
+* Componente modificado
+* Formato para dar coherencia entre espacios y contenedores
+*/
 .container-skills-line ul {
   display: flex;
   justify-content: space-around; /* Esto hará que los elementos tengan un espacio alrededor */
@@ -557,7 +570,7 @@ section .container {
   height: 100px;
   width: 100px;
   margin: 10px;
-  padding: 0; /* Agregar esto */
+  padding: 0; /* Componente añadido */
   font-size: 1rem;
 }
 
@@ -603,6 +616,11 @@ section .container {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+/**
+* Componente modificado
+* Formato para dar coherencia entre espacios y contenedores
+*/
 .services .icon-box {
   display: flex;
   flex-direction: column;
@@ -612,7 +630,7 @@ section .container {
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
-  border-radius: 10px; /* Ajusta este valor para cambiar cuánto quieres que se redondeen las esquinas */
+  border-radius: 10px; /* Componente añadido - Formato - Ajusta para redondeo esquinas  */
 }
 
 .services .icon-box img {
@@ -727,13 +745,17 @@ section .container {
   top: 10px;
 }
 
+/**
+* Componente modificado
+* Formato para dar coherencia entre espacios y contenedores
+*/
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
   background: rgba(255, 255, 255, 0.1);
   position: relative;
-  border-radius: 10px; /* Ajusta este valor para cambiar cuánto quieres que se redondeen las esquinas */
+  border-radius: 10px;
   position: relative;
   z-index: 1;
 }
@@ -757,6 +779,11 @@ section .container {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
+/**
+* Componente modificado
+* Formato para dar coherencia entre espacios y contenedores
+*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -770,6 +797,10 @@ section .container {
   padding: 2px 15px;
 }
 
+/**
+* Componente modificado
+* Formato para dar coherencia entre espacios y contenedores
+*/
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
@@ -794,13 +825,17 @@ section .container {
   margin-right: 0;
 }
 
+/**
+* Componente modificado
+* Formato para dar coherencia entre espacios y contenedores
+*/
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 10px; /* Ajusta este valor para cambiar cuánto quieres que se redondeen las esquinas */
+  border-radius: 10px; /* Componente añadido - Formato - Ajusta para redondeo esquinas  */
 }
 
 .portfolio .portfolio-wrap::before {
@@ -914,7 +949,7 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Meeting calendar
+# Meeting calendar - Componente añadido en su totalidad
 --------------------------------------------------------------*/
 
 .table {
@@ -926,7 +961,7 @@ section .container {
 
 .container-fluid {
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 10px; /* Ajusta este valor para cambiar cuánto quieres que se redondeen las esquinas */
+  border-radius: 10px;
 }
 
 .table-bordered td,
@@ -960,11 +995,12 @@ tr {
 @media (max-width: 991px) {
   #table td,
   #table th {
-    font-size: 0.8em; /* Ajusta el tamaño de la fuente */
+    font-size: 0.8em;
     overflow: auto; /* Agrega barras de desplazamiento si el texto es demasiado largo */
     word-break: break-word; /* Permite que las palabras se rompan para ajustarse a la celda */
   }
 }
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -973,7 +1009,7 @@ tr {
   padding: 20px;
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 10px; /* Ajusta este valor para cambiar cuánto quieres que se redondeen las esquinas */
+  border-radius: 10px; /* Componente añadido - Formato - Ajusta para redondeo esquinas  */
 }
 
 .contact .info-box i.bx {
@@ -1001,12 +1037,18 @@ tr {
 }
 
 /*--------------------------------------------------------------
-# Aplicar responsividad al mapa
+# Ajuste de contenedores con google maps y responsividad - Componente añadido en totalidad
 --------------------------------------------------------------*/
+
+.info-box-rigth-format {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .map-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* Este valor puede ajustarse para obtener el ratio de aspecto que desees */
+  padding-bottom: 56.25%;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 10px;
 }
@@ -1018,15 +1060,6 @@ tr {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-/*--------------------------------------------------------------
-# Ajuste de contenedores con google maps
---------------------------------------------------------------*/
-
-.info-box-rigth-format {
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .contact .info-box .social-links {
@@ -1050,7 +1083,7 @@ tr {
 .contact .php-email-form {
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 10px; /* Ajusta este valor para cambiar cuánto quieres que se redondeen las esquinas */
+  border-radius: 10px; /* Componente añadido - Formato - Ajusta para redondeo esquinas  */
 }
 
 .contact .php-email-form .error-message {
@@ -1095,7 +1128,7 @@ tr {
 }
 
 .contact .php-email-form input,
-.contact .php-email-form select,
+.contact .php-email-form select, /* Componente añadido  */
 .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
@@ -1104,22 +1137,31 @@ tr {
   border: 0;
   transition: 0.3s;
   color: #fff;
-  border-radius: 10px; /* Ajusta este valor para cambiar cuánto quieres que se redondeen las esquinas */
+  border-radius: 10px; /* Componente añadido - Formato - Ajusta para redondeo esquinas  */
 }
 
 .contact .php-email-form input:focus,
-.contact .php-email-form select:focus,
+.contact .php-email-form select:focus,  /* Componente añadido  */
 .contact .php-email-form textarea:focus {
   background-color: rgba(255, 255, 255, 0.11);
 }
 
+/**
+* Componente añadido - Select día
+* Elimina el aspecto predeterminado en función del navegador
+* Ajuste para que coincida con las entradas de texto
+*/
 .contact .php-email-form select {
-  appearance: none; /* Elimina el aspecto predeterminado */
-  -webkit-appearance: none; /* En navegadores basados en Webkit (Chrome, Safari) */
-  -moz-appearance: none; /* En Firefox */
-  padding: 10px 15px; /* Ajuste para que coincida con las entradas de texto */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px 15px;
 }
 
+/**
+* Componente añadido
+* Formato adaptado al de la plantilla
+*/
 .contact .php-email-form select[name="meeting-hour"] {
   color: rgba(255, 255, 255, 0.3);
   background: rgba(255, 255, 255, 0.08);
@@ -1130,10 +1172,18 @@ tr {
   padding: 10px 15px;
 }
 
+/**
+* Componente añadido
+* Formato adaptado al de la plantilla
+*/
 .contact .php-email-form select[name="meeting-hour"]:focus {
   background-color: rgba(255, 255, 255, 0.11);
 }
 
+/**
+* Componente añadido
+* Formato adaptado al de la plantilla
+*/
 .contact .php-email-form select option:first-child {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1150,10 +1200,18 @@ tr {
   opacity: 1;
 }
 
+/**
+* Componente añadido
+* Formato para dar coherencia entre espacios y contenedores
+*/
 .contact .php-email-form input {
   padding: 10px 15px;
 }
 
+/**
+* Componente añadido
+* Formato para dar coherencia entre espacios y contenedores
+*/
 .contact .php-email-form textarea {
   padding: 12px 15px;
 }
@@ -1164,28 +1222,43 @@ tr {
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 4px; /* Componente añadido - Formato - Ajusta para redondeo esquinas  */
 }
 
+/*
+* Componente añadido - buttons 
+*/
 .contact .php-email-form button[type="reset"] {
   background: #3ecfbe;
   border: 0;
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 4px; /* Componente añadido - Formato - Ajusta para redondeo esquinas  */
 }
 
+/**
+* Componente añadido - buttons
+* Formato adaptado al de la plantilla
+*/
 .contact .php-email-form button[type="reset"]:hover {
   background: #109888;
 }
 
+/**
+* Componente modificado
+* Formato adaptado al de la plantilla
+*/
 .contact .php-email-form button[type="submit"]:hover {
   background: #109888;
 }
 
+/**
+* Componente añadido
+* Formato adaptado al de la plantilla
+*/
 button {
-  max-width: 200px; /* Ajusta según sea necesario */
+  max-width: 200px;
 }
 
 @keyframes animate-loading {
